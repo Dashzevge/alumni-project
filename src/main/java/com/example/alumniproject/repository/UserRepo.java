@@ -13,4 +13,5 @@ public interface UserRepo extends ListCrudRepository<User, Integer> {
     List<User> findAll();
     @Override
     Optional<User> findById(Integer id);
+    Optional<User> findByFirstName(String name);
 }
